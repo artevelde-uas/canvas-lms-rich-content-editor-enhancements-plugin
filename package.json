@@ -1,0 +1,20 @@
+{
+  "name": "@auc-ghent/canvas-lms-rich-content-editor-enhancements-plugin",
+  "version": "0.1.0",
+  "description": "Plugin for the Canvas LMS theme app that adds a Markdown tab to the rich content editor",
+  "keywords": [
+    "Canvas LMS"
+  ],
+  "license": "MIT",
+  "author": "Renaat De Muynck <renaat.demuynck@arteveldehs.be>",
+  "repository": "https://github.com/auc-ghent/canvas-lms-rich-content-editor-enhancements-plugin",
+  "module": "src/index.js",
+  "files": [
+    "src/index.js",
+    "src/index.global.css",
+    "src/index.module.css"
+  ],
+  "peerDependencies": {
+    "@ahsdile/canvas-lms-app": "^0.19.1"
+  }
+}

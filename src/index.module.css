@@ -1,0 +1,12 @@
+
+.tabs {
+    visibility: visible;
+}
+.tabs .rich-content-editor {}
+.tabs .html-editor {}
+
+.buttons {}
+.buttons :global(a.rte_switch_views_link),
+.buttons :global(a.switch_views) {
+  display: none !important;
+}

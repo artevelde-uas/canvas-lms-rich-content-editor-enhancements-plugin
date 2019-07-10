@@ -1,0 +1,77 @@
+
+/* Remove hideous outline on focused elements */
+.ic-RichContentEditor .mce-tinymce :focus {
+    outline: none;
+}
+
+/* Put nice border around the RCE */
+.ic-RichContentEditor .mce-tinymce,
+.ic-RichContentEditor .mce-tinymce + textarea,
+.ic-RichContentEditor .rce-wrapper {
+    border: 1px #C7CDD1;
+    border-style: none solid solid;
+}
+.ic-RichContentEditor .mce-tinymce {
+    box-sizing: border-box;
+}
+/* Remove excess margins from new RCE tool bar */
+.ic-RichContentEditor .tox-toolbar-overlord {
+    margin: 0 !important;
+}
+/* Add border to bottom of tool bar */
+.ic-RichContentEditor .mce-top-part,
+.ic-RichContentEditor .tox-toolbar-overlord + .tox-anchorbar {
+    border-bottom: 1px solid #C7CDD1;
+}
+/* Remove margins from new RCE status bar and add padding & border */
+.ic-RichContentEditor .mce-statusbar, 
+.ic-RichContentEditor .rce-wrapper > span[role="status"] {
+    margin: 0 !important;
+    padding: 0 0.5rem !important;
+    border-top: 1px solid #C7CDD1;
+}
+/* Hide adjacent separators */
+.ic-RichContentEditor .rce-wrapper span[role="toolbar"] > div + div {
+    display: none !important;
+}
+/* Increase margin on resize handler */
+.ic-RichContentEditor .rce-wrapper span[role="toolbar"] > span:last-child {
+    margin: 0.5rem 0;
+    padding: 0 !important;
+}
+/* Remove borders on edit area  */
+.ic-RichContentEditor .mce-edit-area,
+.ic-RichContentEditor .tox-edit-area {
+    border: none !important;
+    border-radius: 0 !important;
+}
+/* Add outline to focused areas */
+.ic-RichContentEditor .tox-edit-area.active > iframe,
+.ic-RichContentEditor textarea:focus {
+    outline: solid 1px var(--ic-link-color-lightened-10);
+    outline-offset: -1px;
+}
+/* Remove borders on iframes  */
+.ic-RichContentEditor .mce-edit-area > iframe,
+.ic-RichContentEditor .tox-edit-area > iframe {
+    border: none;
+}
+.ic-RichContentEditor textarea {
+    width: 100% !important;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+.ic-RichContentEditor .mce-tinymce + textarea {
+    border: 1px solid;
+    border-color: transparent #C7CDD1 #C7CDD1;
+    margin-top: -1px;
+}
+.ic-RichContentEditor textarea:focus {
+    outline: solid 1px var(--ic-link-color-lightened-10);
+    outline-offset: -1px;
+}
+.ic-RichContentEditor .mce-tinymce + textarea:focus {
+    outline-offset: -2px;
+}
+
